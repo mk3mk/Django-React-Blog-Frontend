@@ -13,7 +13,8 @@ function Posts() {
     const userId = useUserData()?.user_id;
 
     const fetchPosts = async () => {
-        const post_res = await apiInstance.get(`author/dashboard/post-list/${userId}/`);
+        // const post_res = await apiInstance.get(`author/dashboard/post-list/${userId}/`);
+        const post_res = await apiInstance.get(`post/lists/`);
         setPosts(post_res.data);
     };
 
