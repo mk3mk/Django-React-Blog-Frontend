@@ -7,8 +7,8 @@ function Footer() {
                 <div className="col-md-5 mb-3 mb-md-0">
                     <div className="text-primary-hover text-white">
                         2019 - 2024{" "}
-                        <a href="https://youtube.com/@desphixs/" className="text-reset btn-link ms-2 me-2 " target="_blank">
-                            Desphixs
+                        <a href="#" className="text-reset btn-link ms-2 me-2 " target="_blank">
+                            Amaranga
                         </a>
                         | All rights reserved
                     </div>

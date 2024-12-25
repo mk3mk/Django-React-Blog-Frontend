@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import Header from "../partials/Header";
 import Footer from "../partials/Footer";
+import ModalVerticallyCenteredExample from "../partials/ModalVerticallyCenteredExample";
 import ChartLineExample from "../partials/ChartLineExample";
 import ChartBarExample from "../partials/ChartBarExample";
 import ChartPolarAreaExample from "../partials/ChartPolarAreaExample";
+import TableExample from "../partials/TableExample";
 import { Link } from "react-router-dom";
 import moment from "moment";
 
@@ -96,8 +98,9 @@ function Index() {
         <CCol><h2>Categories</h2></CCol>
     </CRow>
     <CRow>
-        <CCol>1 of 2</CCol>
-        <CCol>2 of 2</CCol>
+        <CCol><ModalVerticallyCenteredExample /></CCol>
+        <CCol><TableExample /></CCol>
+        <CCol><ModalVerticallyCenteredExample /></CCol>
     </CRow>
     <CRow>
         <CCol><ChartLineExample /></CCol>
