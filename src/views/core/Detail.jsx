@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Header from "../partials/Header";
 import Footer from "../partials/Footer";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 import apiInstance from "../../utils/axios";
 import moment from "moment";
 import Toast from "../../plugin/Toast";
 
 function Detail() {
+
+    const navigate = useNavigate();
+    const goBack = () => navigate(-1);
+    const goHome = () => navigate('/', {replace: true});
+
     const [post, setPost] = useState([]);
     const [tags, setTags] = useState([]);
     const [createComment, setCreateComment] = useState({ full_name: "", email: "", comment: "" });
@@ -118,8 +123,12 @@ function Detail() {
                             <i className="bi bi-grid-fill"></i> Posts
                         </Link>
 
+                        <button className="btn btn-primary w-100 mt-3" onClick={goBack}>Go back</button>
+                        <button className="btn btn-primary w-100 mt-3" onClick={goHome}>Go home</button>
+
 
                                 <ul className="list-inline text-primary-hover mt-0 mt-lg-3 text-start">
+
                                     {tags?.map((t, index) => (
                                         <li className="list-inline-item">
                                             <a className="text-body text-decoration-none fw-bold" href="#">
@@ -127,6 +136,7 @@ function Detail() {
                                             </a>
                                         </li>
                                     ))}
+
                                 </ul>
                             </div>
                         </div>

@@ -14,10 +14,17 @@ import useUserData from "../../plugin/useUserData";
 import Toast from "../../plugin/Toast";
 
 import {
-    CContainer,
+    CCard,
+    CCardBody,
+    CCardFooter,
+    CCardImage,
+    CCardText,
+    CCardTitle,
     CCol,
     CRow,
+    CContainer
   } from '@coreui/react'
+
 
 function Index() {
     const [posts, setPosts] = useState([]);
@@ -91,12 +98,68 @@ function Index() {
 
 
 <section className="bg-light pt-5 pb-5 mb-3 mt-3">
-
-
-    <CContainer>
+<CContainer>
     <CRow>
-        <CCol><h2>Categories</h2></CCol>
+        <CCol><h2>Home</h2></CCol>
     </CRow>
+</CContainer>
+</section>
+
+<CContainer>
+<CRow xs={{ cols: 1 }} md={{ cols: 3 }} className="g-4">
+      <CCol xs>
+        <CCard className="h-100">
+          <CCardImage orientation="top" src="/react.jpg" />
+          <CCardBody>
+            <CCardTitle>Card title</CCardTitle>
+            <CCardText>
+              This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.
+            </CCardText>
+          </CCardBody>
+          <CCardFooter>
+            <small className="text-body-secondary">Last updated 3 mins ago</small>
+          </CCardFooter>
+        </CCard>
+      </CCol>
+      <CCol xs>
+        <CCard className="h-100">
+          <CCardImage orientation="top" src="/react.jpg" />
+          <CCardBody>
+            <CCardTitle>Card title</CCardTitle>
+            <CCardText>
+              This card has supporting text below as a natural lead-in to additional content.
+            </CCardText>
+          </CCardBody>
+          <CCardFooter>
+            <small className="text-body-secondary">Last updated 3 mins ago</small>
+          </CCardFooter>
+        </CCard>
+      </CCol>
+      <CCol xs>
+        <CCard className="h-100">
+          <CCardImage orientation="top" src="/react.jpg" />
+          <CCardBody>
+            <CCardTitle>Card title</CCardTitle>
+            <CCardText>
+              This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height
+              action.
+            </CCardText>
+          </CCardBody>
+          <CCardFooter>
+            <small className="text-body-secondary">Last updated 3 mins ago</small>
+          </CCardFooter>
+        </CCard>
+      </CCol>
+    </CRow>
+</CContainer>
+
+
+
+
+
+<CContainer>
     <CRow>
         <CCol><ModalVerticallyCenteredExample /></CCol>
         <CCol><TableExample /></CCol>
@@ -107,10 +170,7 @@ function Index() {
         <CCol><ChartPolarAreaExample /></CCol>
         <CCol><ChartBarExample /></CCol>
     </CRow>
-    </CContainer>
-</section>
-
-
+</CContainer>
 
 
 
@@ -144,7 +204,7 @@ function Index() {
                                     </div>
                                     <div className="card-body px-3 pt-3">
                                         <h4 className="card-title">
-                                            <Link to={`${p.slug}`} className="btn-link text-reset stretched-link fw-bold text-decoration-none">
+                                            <Link to={`detail/${p.slug}`} className="btn-link text-reset stretched-link fw-bold text-decoration-none">
                                                 {p.title?.slice(0, 32) + "..."}
                                             </Link>
                                         </h4>
@@ -255,7 +315,7 @@ function Index() {
                                     </div>
                                     <div className="card-body px-3 pt-3">
                                         <h4 className="card-title">
-                                            <Link to={`${p.slug}`} className="btn-link text-reset stretched-link fw-bold text-decoration-none">
+                                            <Link to={`detail/${p.slug}`} className="btn-link text-reset stretched-link fw-bold text-decoration-none">
                                                 {p.title?.slice(0, 32) + "..."}
                                             </Link>
                                         </h4>
