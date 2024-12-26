@@ -103,7 +103,6 @@ function Index() {
         <CCol><h2>Home</h2></CCol>
     </CRow>
 </CContainer>
-</section>
 
 <CContainer>
 <CRow xs={{ cols: 1 }} md={{ cols: 3 }} className="g-4">
@@ -154,7 +153,7 @@ function Index() {
       </CCol>
     </CRow>
 </CContainer>
-
+</section>
 
 
 
