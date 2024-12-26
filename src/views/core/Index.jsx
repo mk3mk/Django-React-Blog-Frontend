@@ -108,7 +108,7 @@ function Index() {
 <CRow xs={{ cols: 1 }} md={{ cols: 3 }} className="g-4">
       <CCol xs>
         <CCard className="h-100">
-          <CCardImage orientation="top" src="/react.jpg" />
+          <CCardImage orientation="top" src="games/cards-01.png" />
           <CCardBody>
             <CCardTitle>Card title</CCardTitle>
             <CCardText>
@@ -123,7 +123,7 @@ function Index() {
       </CCol>
       <CCol xs>
         <CCard className="h-100">
-          <CCardImage orientation="top" src="/react.jpg" />
+        <CCardImage orientation="top" src="games/cubes-01.png" />
           <CCardBody>
             <CCardTitle>Card title</CCardTitle>
             <CCardText>
@@ -137,7 +137,7 @@ function Index() {
       </CCol>
       <CCol xs>
         <CCard className="h-100">
-          <CCardImage orientation="top" src="/react.jpg" />
+        <CCardImage orientation="top" src="games/cells-01.png" />
           <CCardBody>
             <CCardTitle>Card title</CCardTitle>
             <CCardText>
