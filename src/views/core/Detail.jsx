@@ -112,6 +112,13 @@ function Detail() {
                                     </li>
                                 </ul>
                                 {/* Tags */}
+
+
+                        <Link className="btn btn-primary w-100 p-3" to="/posts/">
+                            <i className="bi bi-grid-fill"></i> Posts
+                        </Link>
+
+
                                 <ul className="list-inline text-primary-hover mt-0 mt-lg-3 text-start">
                                     {tags?.map((t, index) => (
                                         <li className="list-inline-item">
@@ -123,6 +130,7 @@ function Detail() {
                                 </ul>
                             </div>
                         </div>
+
                         {/* Left sidebar END */}
                         {/* Main Content START */}
                         <div className="col-lg-10 mb-5">

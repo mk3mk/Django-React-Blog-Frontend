@@ -28,7 +28,7 @@ function App() {
                 <MainWrapper>
                     <Routes>
                         <Route path="/" element={<Index />} />
-                        <Route path="/:slug/" element={<Detail />} />
+                        <Route path="detail/:slug/" element={<Detail />} />
                         <Route path="/category/:slug/" element={<Category />} />
                         <Route path="/search/" element={<Search />} />
 
