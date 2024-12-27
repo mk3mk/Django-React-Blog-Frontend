@@ -48,8 +48,13 @@ function Header() {
                                         </Link>
                                     </li>
                                     <li>
+                                        <Link className="dropdown-item" to="/games/">
+                                            <i className="bi bi-controller"></i> Games
+                                        </Link>
+                                    </li>
+                                    <li>
                                         <Link className="dropdown-item" to="/orders/">
-                                            <i className="bi bi-telephone-fill"></i> Orders
+                                        <i class="bi bi-bag-check-fill"></i> Orders
                                         </Link>
                                     </li>
                                     <li>

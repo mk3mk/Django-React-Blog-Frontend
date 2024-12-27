@@ -7,6 +7,7 @@ import Category from "./views/core/Category";
 import About from "./views/pages/About";
 import Contact from "./views/pages/Contact";
 import Orders from "./views/pages/Orders";
+import Games from "./views/pages/Games";
 import Register from "./views/auth/Register";
 import Login from "./views/auth/Login";
 import Logout from "./views/auth/Logout";
@@ -52,6 +53,7 @@ function App() {
                         <Route path="/about/" element={<About />} />
                         <Route path="/contact/" element={<Contact />} />
                         <Route path="/orders/" element={<Orders />} />
+                        <Route path="/games/" element={<Games />} />
                     </Routes>
                 </MainWrapper>
             </BrowserRouter>
