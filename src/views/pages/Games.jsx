@@ -4,14 +4,19 @@ import Header from "../partials/Header";
 import Footer from "../partials/Footer";
 
 import {
-    CCard,
-    CCardBody,
-    CCardFooter,
-    CCardImage,
-    CCardText,
-    CCardTitle,
-    CCol,
-    CRow,
+  CCard,
+  CCardBody,
+  CCardFooter,
+  CCardImage,
+  CCardText,
+  CCardTitle,
+  CCardLink,
+  CListGroup,
+  CListGroupItem,
+  CButton,
+  CCol,
+  CRow,
+  CContainer
   } from '@coreui/react'
 
 function Games() {
@@ -35,7 +40,40 @@ function Games() {
 
     return (
         <>
-            <Header />
+    <Header />
+
+
+  <CContainer>
+    <CRow xs={{ cols: 1 }} md={{ cols: 4 }} className="g-4">
+      {games.map((game) => (
+        <CCol xs>
+        <CCard key={game.id} className="h-100">
+        <CCardImage orientation="top" height="200px" src={`${baseURL}${game.image}`} />
+          <CCardBody>
+            <CCardTitle>{game.title}</CCardTitle>
+            <CCardText>
+            <p>{game.description}</p>
+            </CCardText>
+          </CCardBody>
+          <CListGroup flush>
+            <CListGroupItem>
+            <i className="fas fa-calendar text-black-50"></i> <span className="me-3 text-black-50">05-02-2024</span>    
+            <i className="fas fa-heart text-black-50" /> <span className="me-3 text-black-50">{game.likes}</span>
+            <i className="fas fa-comments text-black-50"></i> <span className="text-black-50">{game.comments}</span>
+            </CListGroupItem>
+          </CListGroup>
+          <CButton color="primary" href="#">
+            Continue...
+          </CButton>
+          <CCardFooter>
+            <small className="text-body-secondary">Last updated 3 mins ago</small>
+          </CCardFooter>
+        </CCard>
+        </CCol>
+      ))}
+    </CRow>
+  </CContainer>
+
 
             <section className="pt-4 pb-0">
                 <div className="container">
@@ -68,57 +106,6 @@ function Games() {
                 ))}
             </ul>
         </div>
-
-
-    <CRow xs={{ cols: 1 }} md={{ cols: 3 }} className="g-4">
-      <CCol xs>
-        <CCard className="h-100">
-          <CCardImage orientation="top" src="/react.jpg" />
-          <CCardBody>
-            <CCardTitle>Card title</CCardTitle>
-            <CCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.
-            </CCardText>
-          </CCardBody>
-          <CCardFooter>
-            <small className="text-body-secondary">Last updated 3 mins ago</small>
-          </CCardFooter>
-        </CCard>
-      </CCol>
-      <CCol xs>
-        <CCard className="h-100">
-          <CCardImage orientation="top" src="/react.jpg" />
-          <CCardBody>
-            <CCardTitle>Card title</CCardTitle>
-            <CCardText>
-              This card has supporting text below as a natural lead-in to additional content.
-            </CCardText>
-          </CCardBody>
-          <CCardFooter>
-            <small className="text-body-secondary">Last updated 3 mins ago</small>
-          </CCardFooter>
-        </CCard>
-      </CCol>
-      <CCol xs>
-        <CCard className="h-100">
-          <CCardImage orientation="top" src="/react.jpg" />
-          <CCardBody>
-            <CCardTitle>Card title</CCardTitle>
-            <CCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional
-              content. This card has even longer content than the first to show that equal height
-              action.
-            </CCardText>
-          </CCardBody>
-          <CCardFooter>
-            <small className="text-body-secondary">Last updated 3 mins ago</small>
-          </CCardFooter>
-        </CCard>
-      </CCol>
-    </CRow>
-
-
 
                             <h3 className="mt-4">We do this across:</h3>
                             <ul>
