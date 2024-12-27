@@ -1158,6 +1158,16 @@
   resolved "https://registry.npmjs.org/@coreui/coreui/-/coreui-5.2.0.tgz"
   integrity sha512-DZLWzPIZP3KTNgcaRXny/7lcQm0rDMrheu3VsWpgbln5rUuJwxdopwhTSnOryVyCwjlDbs3Z8ZfIzOeBXNC4GA==
 
+"@coreui/icons-react@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/@coreui/icons-react/-/icons-react-2.3.0.tgz"
+  integrity sha512-s4jjCrtHnqnu30GLcfDbtWxEaB7imBQ5E6w89JzP5Jd6EV6o38tR0RNix4nXRubayJKAvIjlwZWOKEFNG0NM7Q==
+
+"@coreui/icons@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/@coreui/icons/-/icons-3.0.1.tgz"
+  integrity sha512-u9UKEcRMyY9pa4jUoLij8pAR03g5g6TLWV33/Mx2ix8sffyi0eO4fLV8DSTQljDCw938zt7KYog5cVKEAJUxxg==
+
 "@coreui/react-chartjs@^3.0.0":
   version "3.0.0"
   resolved "https://registry.npmjs.org/@coreui/react-chartjs/-/react-chartjs-3.0.0.tgz"

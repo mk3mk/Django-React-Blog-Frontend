@@ -119,7 +119,7 @@ function Detail() {
                                 {/* Tags */}
 
 
-                        <Link className="btn btn-primary w-100 p-3" to="/posts/">
+                        <Link className="btn btn-primary w-100" to="/posts/">
                             <i className="bi bi-grid-fill"></i> Posts
                         </Link>
 

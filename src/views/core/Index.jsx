@@ -13,6 +13,9 @@ import apiInstance from "../../utils/axios";
 import useUserData from "../../plugin/useUserData";
 import Toast from "../../plugin/Toast";
 
+import CIcon from '@coreui/icons-react';
+import * as icon from '@coreui/icons';
+
 import {
     CCard,
     CCardBody,
@@ -20,6 +23,10 @@ import {
     CCardImage,
     CCardText,
     CCardTitle,
+    CCardLink,
+    CListGroup,
+    CListGroupItem,
+    CButton,
     CCol,
     CRow,
     CContainer
@@ -105,7 +112,9 @@ function Index() {
 </CContainer>
 
 <CContainer>
-<CRow xs={{ cols: 1 }} md={{ cols: 3 }} className="g-4">
+<CRow xs={{ cols: 1 }} sm={{ cols: 2 }} md={{ cols: 3 }} lg={{ cols: 4 }} xl={{ cols: 4 }} className="g-4">
+      
+      
       <CCol xs>
         <CCard className="h-100">
           <CCardImage orientation="top" className="h-50" src="games/cards-01.png" />
@@ -116,11 +125,23 @@ function Index() {
               content. This content is a little bit longer.
             </CCardText>
           </CCardBody>
+          <CListGroup flush>
+            <CListGroupItem>
+            <i className="fas fa-calendar text-black-50"></i> <span className="me-3 text-black-50">05-02-2024</span>    
+            <i className="fas fa-heart text-black-50" /> <span className="me-3 text-black-50">85</span>
+            <i className="fas fa-comments text-black-50"></i> <span className="text-black-50">20</span>
+            </CListGroupItem>
+          </CListGroup>
+          <CButton color="primary" href="#">
+            Continue...
+          </CButton>
           <CCardFooter>
             <small className="text-body-secondary">Last updated 3 mins ago</small>
           </CCardFooter>
         </CCard>
       </CCol>
+
+
       <CCol xs>
         <CCard className="h-100">
         <CCardImage orientation="top" className="h-50" src="games/cubes-01.png" />
@@ -130,11 +151,23 @@ function Index() {
               This card has supporting text below as a natural lead-in to additional content.
             </CCardText>
           </CCardBody>
+          <CListGroup flush>
+            <CListGroupItem>
+            <i className="fas fa-calendar text-black-50"></i> <span className="me-3 text-black-50">05-02-2024</span>    
+            <i className="fas fa-heart text-black-50" /> <span className="me-3 text-black-50">85</span>
+            <i className="fas fa-comments text-black-50"></i> <span className="text-black-50">20</span>
+            </CListGroupItem>
+          </CListGroup>
+          <CButton color="primary" href="#">
+            Continue...
+          </CButton>
           <CCardFooter>
             <small className="text-body-secondary">Last updated 3 mins ago</small>
           </CCardFooter>
         </CCard>
       </CCol>
+
+
       <CCol xs>
         <CCard className="h-100">
         <CCardImage orientation="top" className="h-50" src="games/cells-01.png" />
@@ -146,11 +179,22 @@ function Index() {
               action.
             </CCardText>
           </CCardBody>
+          <CListGroup flush>
+            <CListGroupItem>
+            <i className="fas fa-calendar text-black-50"></i> <span className="me-3 text-black-50">05-02-2024</span>    
+            <i className="fas fa-heart text-black-50" /> <span className="me-3 text-black-50">85</span>
+            <i className="fas fa-comments text-black-50"></i> <span className="text-black-50">20</span>
+            </CListGroupItem>
+          </CListGroup>
+          <CButton color="primary" href="#">
+            Continue...
+          </CButton>
           <CCardFooter>
             <small className="text-body-secondary">Last updated 3 mins ago</small>
           </CCardFooter>
         </CCard>
       </CCol>
+
 
       <CCol xs>
         <CCard className="h-100">
@@ -162,11 +206,23 @@ function Index() {
               content. This content is a little bit longer.
             </CCardText>
           </CCardBody>
+          <CListGroup flush>
+            <CListGroupItem>
+            <i className="fas fa-calendar text-black-50"></i> <span className="me-3 text-black-50">05-02-2024</span>    
+            <i className="fas fa-heart text-black-50" /> <span className="me-3 text-black-50">85</span>
+            <i className="fas fa-comments text-black-50"></i> <span className="text-black-50">20</span>
+            </CListGroupItem>
+          </CListGroup>
+          <CButton color="primary" href="#">
+            Continue...
+          </CButton>
           <CCardFooter>
             <small className="text-body-secondary">Last updated 3 mins ago</small>
           </CCardFooter>
         </CCard>
       </CCol>
+
+
       <CCol xs>
         <CCard className="h-100">
         <CCardImage orientation="top" className="h-50" src="games/cubes-01.png" />
@@ -176,11 +232,23 @@ function Index() {
               This card has supporting text below as a natural lead-in to additional content.
             </CCardText>
           </CCardBody>
+          <CListGroup flush>
+            <CListGroupItem>
+            <i className="fas fa-calendar text-black-50"></i> <span className="me-3 text-black-50">05-02-2024</span>    
+            <i className="fas fa-heart text-black-50" /> <span className="me-3 text-black-50">85</span>
+            <i className="fas fa-comments text-black-50"></i> <span className="text-black-50">20</span>
+            </CListGroupItem>
+          </CListGroup>
+          <CButton color="primary" href="#">
+            Continue...
+          </CButton>
           <CCardFooter>
             <small className="text-body-secondary">Last updated 3 mins ago</small>
           </CCardFooter>
         </CCard>
       </CCol>
+
+
       <CCol xs>
         <CCard className="h-100">
         <CCardImage orientation="top" className="h-50" src="games/cells-01.png" />
@@ -192,11 +260,23 @@ function Index() {
               action.
             </CCardText>
           </CCardBody>
+          <CListGroup flush>
+            <CListGroupItem>
+            <i className="fas fa-calendar text-black-50"></i> <span className="me-3 text-black-50">05-02-2024</span>    
+            <i className="fas fa-heart text-black-50" /> <span className="me-3 text-black-50">85</span>
+            <i className="fas fa-comments text-black-50"></i> <span className="text-black-50">20</span>
+            </CListGroupItem>
+          </CListGroup>
+          <CButton color="primary" href="#">
+            Continue...
+          </CButton>
           <CCardFooter>
             <small className="text-body-secondary">Last updated 3 mins ago</small>
           </CCardFooter>
         </CCard>
       </CCol>
+
+
     </CRow>
 </CContainer>
 </section>
