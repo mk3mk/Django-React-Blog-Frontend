@@ -16,6 +16,7 @@ function Profile() {
         facebook: "",
         twitter: "",
         country: "",
+        city: "",
     });
     const userId = useUserData()?.user_id;
 
@@ -70,6 +71,7 @@ function Profile() {
         formData.append("facebook", profileData.facebook);
         formData.append("twitter", profileData.twitter);
         formData.append("country", profileData.country);
+        formData.append("city", profileData.country);
 
         try {
             const res = await apiInstance.patch(`user/profile/${userId}/`, formData, {
@@ -161,6 +163,19 @@ function Profile() {
                                                 <input type="text" id="country" className="form-control" placeholder="Country" required="" value={profileData?.country} onChange={handleProfileChange} name="country" />
                                                 <div className="invalid-feedback">Please choose country.</div>
                                             </div>
+
+
+                                            {/* Country */}
+                                            <div className="mb-3 col-12 col-md-12">
+                                                <label className="form-label" htmlFor="editCountry">
+                                                    City
+                                                </label>
+                                                <input type="text" id="city" className="form-control" placeholder="city" required="" value={profileData?.city} onChange={handleProfileChange} name="city" />
+                                                <div className="invalid-feedback">Please choose city.</div>
+                                            </div>
+
+
+
                                             {/* Country */}
                                             <div className="mb-3 col-12 col-md-12">
                                                 <label className="form-label" htmlFor="editCountry">

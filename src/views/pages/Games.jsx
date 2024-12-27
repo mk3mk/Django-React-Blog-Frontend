@@ -75,18 +75,18 @@ function Games() {
   </CContainer>
 
 
-            <section className="pt-4 pb-0">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-9 mx-auto">
-                            <h2>Orders</h2>
-                            <p className="lead">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus, sapiente facere harum molestiae, quas aperiam nulla eius, cupiditate deserunt accusantium magni! Necessitatibus saepe cupiditate facilis, sint est quod hic maxime aliquam, et impedit
-                                optio nihil
-                            </p>
+<section className="pt-4 pb-0">
+    <div className="container">
+        <div className="row">
+            <div className="col-xl-9 mx-auto">
+                <h2>Orders</h2>
+                <p className="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus, sapiente facere harum molestiae, quas aperiam nulla eius, cupiditate deserunt accusantium magni! Necessitatibus saepe cupiditate facilis, sint est quod hic maxime aliquam, et impedit
+                    optio nihil
+                </p>
 
 
         <div>
