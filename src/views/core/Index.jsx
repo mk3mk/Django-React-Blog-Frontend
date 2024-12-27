@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import axios from 'axios';
 import Header from "../partials/Header";
 import Footer from "../partials/Footer";
 import ModalVerticallyCenteredExample from "../partials/ModalVerticallyCenteredExample";
@@ -34,6 +35,25 @@ import {
 
 
 function Index() {
+
+    const [games, setGames] = useState([]);
+    const baseURL = 'http://127.0.0.1:8000';
+  
+    useEffect(() => {
+        // Получение данных с API
+        const fetchGames = async () => {
+            try {
+                const response = await axios.get('http://localhost:8000/api/v1/games/');
+                setGames(response.data);
+            } catch (error) {
+                console.error('Ошибка при загрузке игр:', error);
+            }
+        };
+  
+        fetchGames();
+    }, []);
+
+
     const [posts, setPosts] = useState([]);
     const [popularPosts, setPopularPosts] = useState([]);
     const [category, setCategory] = useState([]);
@@ -98,6 +118,45 @@ function Index() {
     return (
         <div>
             <Header />
+
+
+<CContainer>
+    <CRow>
+        <CCol><h2>Games</h2></CCol>
+    </CRow>
+</CContainer>
+
+
+  <CContainer>
+    <CRow xs={{ cols: 1 }} md={{ cols: 4 }} className="g-4">
+      {games.map((game) => (
+        <CCol xs>
+        <CCard key={game.id} className="h-100">
+        <CCardImage orientation="top" height="200px" src={`${baseURL}${game.image}`} />
+          <CCardBody>
+            <CCardTitle>{game.title}</CCardTitle>
+            <CCardText>
+            <p>{game.description}</p>
+            </CCardText>
+          </CCardBody>
+          <CListGroup flush>
+            <CListGroupItem>
+            <i className="fas fa-calendar text-black-50"></i> <span className="me-3 text-black-50">05-02-2024</span>    
+            <i className="fas fa-heart text-black-50" /> <span className="me-3 text-black-50">{game.likes}</span>
+            <i className="fas fa-comments text-black-50"></i> <span className="text-black-50">{game.comments}</span>
+            </CListGroupItem>
+          </CListGroup>
+          <CButton color="primary" href="#">
+            Continue...
+          </CButton>
+          <CCardFooter>
+            <small className="text-body-secondary">Last updated 3 mins ago</small>
+          </CCardFooter>
+        </CCard>
+        </CCol>
+      ))}
+    </CRow>
+  </CContainer>
 
 
 
