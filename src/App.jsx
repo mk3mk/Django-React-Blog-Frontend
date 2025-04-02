@@ -30,7 +30,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Index />} />
                         <Route path="detail/:slug/" element={<Detail />} />
-                        <Route path="/category/:slug/" element={<Category />} />
+                        <Route path="/category/:slug?/" element={<Category />} />
                         <Route path="/search/" element={<Search />} />
 
                         {/* Authentication */}

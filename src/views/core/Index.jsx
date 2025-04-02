@@ -119,13 +119,13 @@ function Index() {
         <div>
             <Header />
 
-
+<section className="bg-light pt-5 pb-5 mb-3 mt-3">
 <CContainer>
     <CRow>
         <CCol><h2>Games</h2></CCol>
     </CRow>
 </CContainer>
-
+</section>
 
   <CContainer>
     <CRow xs={{ cols: 1 }} md={{ cols: 4 }} className="g-4">

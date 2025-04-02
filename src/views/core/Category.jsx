@@ -35,7 +35,7 @@ function Category() {
                     <div className="row">
                         <div className="col">
                             <a href="#" className="d-block card-img-flash">
-                                <img src="assets/images/adv-3.png" alt="" />
+                                <img src="http://127.0.0.1:8000/media/images/adv-3.png" alt="" />Category
                             </a>
                             <h2 className="text-start d-block mt-1">
                                 <i className="bi bi-grid-fill"></i> {posts[0]?.category?.title} (16 Articles)
